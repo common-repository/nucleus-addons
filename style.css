@@ -1,0 +1,373 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-size: 16px;
+     color: #191919;
+     font-family: 'Roboto', sans-serif;
+     font-weight: normal;
+     font-style: normal;
+}
+ * {
+     margin: 0;
+     padding: 0;
+}
+ p {
+     margin: 0;
+     padding: 0px;
+}
+ a, button {
+     transition: all 0.3s ease-out 0s;
+}
+ *::-moz-selection {
+     background: #e6990b;
+     color: #fff;
+     text-shadow: none;
+}
+ ::-moz-selection {
+     background: #e6990b;
+     color: #fff;
+     text-shadow: none;
+}
+ ::selection {
+     background: #e6990b;
+     color: #fff;
+     text-shadow: none;
+}
+ *::-moz-placeholder {
+     color: #555555;
+     font-size: 14px;
+     opacity: 1;
+}
+ *:-ms-input-placeholder {
+     color: #555555;
+     font-size: 14px;
+     opacity: 1;
+}
+ *::placeholder {
+     color: #555555;
+     font-size: 14px;
+     opacity: 1;
+}
+ h1, h2, h3, h4, h5, h6 {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 700;
+     color: #555;
+}
+ ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ a {
+     text-decoration: none;
+     transition: .4s;
+     -webkit-transition: all .4s ease-in-out;
+}
+ a:hover {
+     text-decoration: none;
+}
+ button:focus {
+     outline: none;
+}
+ input:focus {
+     outline: none;
+}
+ textarea:focus {
+     outline: none;
+}
+ p {
+     color: #191919;
+}
+/* * Team Style Default */
+ .team-item-default {
+     width: 100%;
+     overflow: hidden;
+     text-align: center;
+     border: 1px solid #eeee;
+     position: relative;
+     box-sizing: border-box;
+}
+ .team-item-default:after {
+     content: "";
+     clear: both;
+     display: block;
+     position: absolute;
+     width: 0%;
+     height: 1px;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     transition: all .3s ease;
+     background: #ea880d;
+}
+ .team-item-default .thumbnail {
+     width: 100%;
+     overflow: hidden;
+     background: #fff;
+}
+ .team-item-default .thumbnail img {
+     transition: all .8s ease;
+     width: 100%;
+}
+ .team-item-default .content {
+     padding: 20px 10px;
+}
+ .team-item-default .content h3 {
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 24px;
+}
+ .team-item-default .content h4 {
+     font-size: 16px;
+     font-weight: 400;
+     margin-bottom: 15px;
+     color: #ea880d;
+     margin-top: 5px;
+}
+ .team-item-default .content ul li {
+     display: inline-block;
+     margin: 0px 3px;
+}
+ .team-item-default .content ul li a {
+     display: inline-block;
+}
+ .team-item-default .content ul li a i {
+     width: 35px;
+     height: 35px;
+     color: #666;
+     border: 1px solid #eee;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 14px;
+     transition: all .3s ease-in-out;
+}
+ .team-item-default .content ul li a:hover i {
+     border-color: #ea880d;
+     color: #fff;
+     background: #ea880d;
+}
+ .team-item-default:hover:after {
+     width: 100%;
+}
+ .team-item-default:hover .thumbnail img {
+     transform: scale(1.2);
+}
+/* * Team Style 01 */
+ .team-style-1 {
+     width: 100%;
+     overflow: hidden;
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+     border: none;
+}
+ .team-style-1 .team-thumbnail {
+     width: 50%;
+     float: left;
+     overflow: hidden;
+     position: relative;
+}
+ .team-style-1 .team-thumbnail img {
+     width: 100%;
+}
+ .team-style-1 .team-thumbnail .thumbnail-overly {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     justify-content: center;
+     display: flex;
+     align-items: center;
+     background: rgba(0, 0, 0, 0.6);
+     transition: all .3s ease-in-out;
+     transform: scale(0);
+}
+ .team-style-1 .team-thumbnail .thumbnail-overly ul li {
+     display: inline-block;
+     margin: 0px 2px;
+}
+ .team-style-1 .team-thumbnail .thumbnail-overly ul li a {
+     display: inline-block;
+}
+ .team-style-1 .team-thumbnail .thumbnail-overly ul li a i {
+     color: #fff;
+     border: 1px solid #fff;
+     width: 35px;
+     height: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 14px;
+     -webkit-transition: all .3s ease-in-out;
+}
+ .team-style-1 .team-thumbnail .thumbnail-overly ul li a i:hover {
+     background: #fff;
+     color: #333;
+}
+ .team-style-1 .content {
+     overflow: hidden;
+     width: 50%;
+     box-sizing: border-box;
+     padding-left: 15px;
+     padding-top: 30px;
+     padding-right: 15px;
+     padding-bottom: 30px;
+}
+ .team-style-1 .content h3 {
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 1;
+}
+ .team-style-1 .content h5 {
+     font-size: 16px;
+     line-height: 1;
+     text-transform: uppercase;
+}
+ .team-style-1 .content p {
+     font-size: 16px;
+     text-align: justify;
+     line-height: 27px;
+}
+ .team-style-1:hover .team-thumbnail .thumbnail-overly {
+     transform: scale(1);
+}
+/* * Team Style 02 */
+ .team-style-2 {
+     position: relative;
+     overflow: hidden;
+     width: 100%;
+}
+ .team-style-2 .thumbnail {
+     width: 100%;
+     overflow: hidden;
+}
+ .team-style-2 .thumbnail img {
+     width: 100%;
+     transition: all .6s ease-in-out;
+}
+ .team-style-2 .content {
+     text-align: center;
+     padding-top: 20px;
+     background: #eee;
+     padding-bottom: 20px;
+}
+ .team-style-2 .content h3 {
+     font-size: 20px;
+     color: #ea880d;
+     font-weight: 600;
+     margin: 0 0 6px 0;
+}
+ .team-style-2 .content h4 {
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 1px;
+}
+ .team-style-2 .team-style-social {
+     position: absolute;
+     top: 0;
+     right: -50px;
+     width: auto;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all .3s ease-in-out;
+}
+ .team-style-2 .team-style-social ul {
+     background: #fff;
+}
+ .team-style-2 .team-style-social ul li {
+     display: block;
+     border-bottom: 1px solid #ddd;
+}
+ .team-style-2 .team-style-social ul li a {
+     color: #ea880d;
+     display: inline-block;
+     width: 100%;
+     padding: 10px 14px;
+     transition: all .3s ease-in-out;
+     font-size: 14px;
+}
+ .team-style-2 .team-style-social ul li a:hover {
+     background: #ea880d;
+     color: #fff;
+}
+ .team-style-2:hover .thumbnail img {
+     transform: scale(1.2) rotate(-6deg);
+     -webkit-transform: scale(1.2) rotate(-6deg);
+     -moz-transform: scale(1.15) rotate(-4deg);
+}
+ .team-style-2:hover .team-style-social {
+     right: 0;
+}
+/* * Style 3 */
+ .team-style-3 {
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+     box-sizing: border-box;
+     box-shadow: 0px 0px 10px 3px #eee;
+     transition: all .4s ease-in-out;
+     text-align: center;
+}
+ .team-style-3 img {
+     width: 100%;
+}
+ .team-style-3 .content {
+     margin-bottom: 20px;
+}
+ .team-style-3 .content h3 {
+     font-size: 20px;
+     margin-top: 20px;
+     font-weight: 600;
+}
+ .team-style-3 .content h4 {
+     font-size: 14px;
+     color: #ea880d;
+     font-weight: 600;
+}
+ .team-style-3 .overly {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     height: 0%;
+     overflow: hidden;
+     transition: all .4s ease-in-out;
+     background: rgba(0, 0, 0, 0.4);
+}
+ .team-style-3 .overly ul li {
+     float: left;
+     border: 1px solid #eee;
+}
+ .team-style-3 .overly ul li a {
+     display: inline-block;
+}
+ .team-style-3 .overly ul li a i {
+     font-size: 16px;
+     color: #ea880d;
+     background: #fff;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all .3s ease-in-out;
+}
+ .team-style-3 .overly ul li a i:hover {
+     transform: translateY(-8px);
+}
+ .team-style-3:hover {
+     box-shadow: 10px 10px 0 #eee;
+}
+ .team-style-3:hover .overly {
+     height: 100%;
+}
+ 
